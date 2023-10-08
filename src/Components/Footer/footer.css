@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: rgb(187, 187, 187);
+    width: 100%;
+    gap: 28px;
+    padding-left:20px ;
+}
+
+.first-part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2px;
+}
+
+.first-part p{
+    font-size: 12px;
+}
+.secend-part p{
+    font-size: 12px;
+
+}

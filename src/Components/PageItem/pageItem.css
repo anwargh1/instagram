@@ -1,0 +1,34 @@
+.page-item-rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.profile-image-rightSide {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.page-item-details-rightSide {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 4px;
+    margin-top: 12px;
+}
+
+.follow-button-rightSide {
+    background:none;
+    border: none;
+    color: rgb(0, 179, 255);
+    font-weight: 550;
+    font-size: 12px;
+}
+
+.pagesName-rightSide p{
+    font-size: 14px;
+
+}

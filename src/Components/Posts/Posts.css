@@ -1,0 +1,12 @@
+.posts {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts-flex {
+    width: 65%;
+
+}

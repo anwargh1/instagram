@@ -1,0 +1,74 @@
+.post-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 12px;
+    border-bottom: 2px solid rgb(203, 203, 203);
+}
+
+.flex{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex h3{
+    font-weight: 600;
+
+}
+
+.flex-caption{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.flex-caption h4{
+    font-weight: 600;
+}
+
+.profile-img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+}
+
+.post-img img{
+    width: 100%;
+    border: 2px solid rgb(167, 167, 167);
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.setting-icon{
+    font-size: 25px;
+}
+
+.heart-icon ,
+.message-icon,
+.send-icon ,
+.mark-icon {
+    font-size: 30px;
+ 
+}
+
+.likes{
+    font-weight: 600;
+}
+
+.comments ,
+.add-comment input::placeholder,
+.emoji-icon{
+ color: rgb(139, 139, 139);
+}
+
+.add-comment input{
+    border: none;
+    outline: none;
+}

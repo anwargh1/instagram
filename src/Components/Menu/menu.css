@@ -1,0 +1,40 @@
+.menu{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    height: inherit;
+}
+
+.top-side{
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.threads ,
+.more{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.threads p,
+.more p{
+    font-size: 16px;
+
+}
+
+.threads span,
+.more span{
+    font-size: 30px;
+    position: relative;
+    top: 4px;
+}
+
+
+
+
+
+
