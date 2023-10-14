@@ -1,34 +1,49 @@
 .menu{
     display: flex;
-    gap: 100px;
     justify-content: space-between;
     flex-direction: column;
     height: inherit;
+    box-sizing: border-box;
 }
 
 .top-side{
     display: flex;
-    gap: 32px;
+    gap:20px;
     justify-content: space-between;
     flex-direction: column;
 }
+.logo{
+    margin-top: 30px;
+    padding-left: 12px;
+}
+.logo img{
+    width:120px;
 
+}
 .threads ,
 .more{
     display: flex;
     gap: 20px;
     align-items: center;
+    padding:4px 20px 4px 8px;
+    box-sizing: border-box;
+}
+
+.threads:hover ,
+.more:hover{
+    background-color: rgba(236, 236, 236, 0.784);
+    border-radius: 8px;
 }
 
 .threads p,
 .more p{
-    font-size: 16px;
+    font-size: 14px;
 
 }
 
 .threads span,
 .more span{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     top: 4px;
 }

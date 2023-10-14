@@ -1,0 +1,13 @@
+.profile-page{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 52px;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+}

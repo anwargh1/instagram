@@ -1,0 +1,28 @@
+.highlight {
+    display: flex;
+    padding: 0rem 1em ;
+    align-items: center;
+    justify-content: center;
+    width:  80%;
+}
+
+.slider {
+    width: 100%;
+
+}
+
+.slider button {
+    border-radius: 100%;
+    background-color: #a1a1a1; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.slider button:hover {
+    background-color: #999; 
+}
+
+.slider button:active {
+    background-color: #666; 
+}

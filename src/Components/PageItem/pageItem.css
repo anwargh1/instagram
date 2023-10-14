@@ -6,8 +6,8 @@
 }
 
 .profile-image-rightSide {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     object-fit: cover;
     border-radius: 100%;
 }
@@ -28,7 +28,14 @@
     font-size: 12px;
 }
 
-.pagesName-rightSide p{
-    font-size: 14px;
+.pagesName-rightSide p {
+    font-size: 13px;
+    color: rgb(94, 94, 94);
+
+}
+
+.pagesName-rightSide h5{
+    font-weight:600 ;
+    color: rgb(28, 28, 28);
 
 }

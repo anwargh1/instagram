@@ -2,12 +2,14 @@ import React from 'react'
 import {BsThreeDots} from 'react-icons/bs'
 import './user.css'
 const User = () => {
+  const user =JSON.parse(localStorage.getItem("user"))
+
   return (
     <div className='user-menu'>
     <div className='user-information'>
-    <img className='user-image' src='../Images/userImage.jpeg' alt='User Image' />
+    <img className='user-image' src={user.avatar} alt='User Image' />
     <div >
-        <h4 className='user'>anwar.gh</h4>
+        <h4 className='user'>{user.userName}</h4>
         <p className='user-name'>AnwarGhannam</p>
     </div>
     </div>

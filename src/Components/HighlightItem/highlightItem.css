@@ -1,0 +1,46 @@
+.highlight-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gradient-highlight img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+
+.gradient-highlight{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    align-items: center;
+	background-image: linear-gradient(
+		45deg,
+		#e1e1e1 5%,
+		#cac9c8 15%,
+		#ececec 30%,
+		#cac9c8 45%,
+		#e3e3e3 70%,
+		#cac9c8 80%,
+		#cac9c8 95%
+	);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	overflow: hidden; 
+
+	
+}
+
+
+.highlight-title{
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    text-align: center;
+}

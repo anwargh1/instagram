@@ -2,7 +2,7 @@ import React from 'react';
 import { FiInstagram } from 'react-icons/fi';
 import { IoMdMenu } from 'react-icons/io';
 import { RiThreadsFill } from 'react-icons/ri';
-
+import {Link} from 'react-router-dom';
 import MenuItem from '../MenuItem/MenuItem';
 import './menu.css';
 // const menuItem = [
@@ -53,15 +53,16 @@ import './menu.css';
 //     <MenuItem props={item} key={item.id} />
 //   ))}
 // </div> */}
-const Menu = () => {
+const Menu = ({setPostsData}) => {
+
   return (
     <div className="menu ">
       <div className="top-side">
-        <div className="logo">
+      <Link to='/'> <div className="logo">
 
             <img src='../Images/instagramLogo (2).png' alt='instagram logo'/>
-        </div>
-        <MenuItem />
+        </div></Link>
+        <MenuItem setPostsData={setPostsData}/>
       </div>
 
       <div className="bottom-side">

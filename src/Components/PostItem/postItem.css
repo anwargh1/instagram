@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 10px;
     gap: 12px;
     border-bottom: 2px solid rgb(203, 203, 203);
+    position:relative;
+    margin-bottom:12px
 }
 
 .flex{
@@ -14,11 +15,13 @@
     justify-content: space-between;
 }
 
-.flex h3{
-    font-weight: 600;
+
+.time{
+    font-size: 24px;
+    color: rgb(167, 167, 167);
+    
 
 }
-
 .flex-caption{
     display: flex;
     gap: 12px;
@@ -30,13 +33,11 @@
 }
 
 .profile-img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     overflow: hidden;
     object-fit: cover;
-    border-radius: 50%;
-
-
+    border-radius: 100%;
 }
 
 .post-img img{
@@ -51,7 +52,7 @@
 }
 
 .heart-icon ,
-.message-icon,
+.comment-icon,
 .send-icon ,
 .mark-icon {
     font-size: 30px;
@@ -71,4 +72,10 @@
 .add-comment input{
     border: none;
     outline: none;
+}
+
+.name{
+    font-size: 14px;
+    font-weight:500 ;
+    color: rgb(28, 28, 28);
 }

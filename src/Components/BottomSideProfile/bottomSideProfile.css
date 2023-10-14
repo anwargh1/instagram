@@ -1,0 +1,22 @@
+.interactions-user{
+    display: flex;
+    gap:52px;
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.interactions-user div{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.bottom-side-profile{
+    border-top: 2px solid rgb(203, 203, 203);
+    width: 80%;
+
+}

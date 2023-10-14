@@ -1,0 +1,96 @@
+.top-side-profile{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image-profile img{
+    border-radius: 100%;
+    overflow: hidden;
+    height: 170px;
+    width: 170px;
+}
+
+.image-profile{
+    width: 25%;
+}
+
+.user-profile-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.one{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.user-name-profile{
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.one .profile-actions{
+    display: flex;
+    gap: 8px;
+
+}
+.one .profile-actions button{
+    margin: 0;
+    padding: 8px 20px;
+    background-color: rgb(232, 232, 232);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.two{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.two p{
+  font-weight: 400;
+  color: rgb(17, 17, 17);
+}
+
+.two p span{
+    font-weight: 500;
+  }
+
+  .three p{
+    font-size: 13px;
+    font-weight: 600;
+  color: rgb(17, 17, 17);
+  }
+.account-type{
+    color: rgb(155, 155, 155);
+    font-weight: 450;
+}
+
+.four{
+    font-size: 13px;
+
+}
+
+.five p span{
+    font-weight: 600;
+  color: rgb(17, 17, 17);
+}
+
+.five p {
+    font-size: 14px;
+  color: rgb(17, 17, 17);
+}

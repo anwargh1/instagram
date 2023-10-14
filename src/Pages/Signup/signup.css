@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.signup-page {
+    display: flex;
+    margin-top: 32px;
+    gap: 32px;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.top-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-image{
+    position: relative;
+}
+
+
+.signup-image img:first-child {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.signup-side {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup-box {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    padding-bottom: 40px;
+
+}
+
+.inst-logo img {
+    width: 200px;
+    margin: 20px auto 0px;
+}
+
+.p-signup {
+    font-size: 14px;
+    color: #727272;
+    font-weight: 500;
+}
+
+.signup-top-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.signup-fac {
+    background-color: #18a2f2;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 650;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-facebook {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.or {
+    font-size: 16px;
+    color: #868686;
+    background-color: #fafafa;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    font-weight: 600;
+}
+
+
+.form-signup input {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.form-signup input::placeholder {
+    font-size: 12px;
+}
+
+.p-policy span {
+    color: rgb(93, 93, 125);
+}
+
+.p-service-signup {
+    font-size: 12px;
+    color: #999;
+}
+
+.p-service-signup span {
+    color: rgb(93, 93, 125);
+
+}
+
+.p-policy {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.signup-action {
+    background-color: #0095f6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.box-for-signup{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box-for-signup span{
+    color: #0095f6;
+}
+.box-for-signup p {
+    font-size: 14px;
+    color: #484848;
+}
+
+.for-download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.for-download p {
+    font-size: 14px;
+    color: #313131;
+}
+.for-download img {
+    margin-right: 8px;
+    
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+.first{
+    display: flex;
+    width: 80%;
+    margin-bottom: 12px;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+}
+.first p{
+    font-size: 12px;
+}
+
+
+.secend  {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 12px;
+}
+
+.error-box {
+    font-size: 14px; 
+    color: #f10f0f; 
+
+  }
+  
+  .error-box::before {
+    content: "Error: "; 
+    font-weight: bold; 
+  }
+  
+
+
+@media screen and (max-width: 668px) {
+
+    .signup-image{
+       display: none;
+    }
+
+}
+
+

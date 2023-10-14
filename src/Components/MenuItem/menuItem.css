@@ -1,15 +1,36 @@
-.menu-item{
- display: flex;
- gap :20px;
- align-items: center;
+.menu-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-decoration: none;
+    padding: 4px 20px 4px 8px;
+    box-sizing: border-box;
 }
 
-.menu-item p{
-    font-size: 16px;
+.menu-item p {
+    font-size: 14px;
+    color: black;
 }
 
-.menu-item .icon{
-    font-size: 30px;
+.menu-item .icon {
+    font-size: 25px;
     position: relative;
-    top: 4px;
+    top: 3px;
+    color: black;
+
+}
+
+
+Link:active {
+    color: black;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgba(236, 236, 236, 0.784);
+    border-radius: 8px;
 }

@@ -1,0 +1,19 @@
+.message-box-item{
+    display: flex;
+    align-items: center;
+    gap:12px
+}
+
+.last-message{
+    font-size: 12px;
+    color: rgb(125, 125, 125);
+}
+
+.messages-box-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .messages-box-item:last-child {
+    border-bottom: none;
+  }

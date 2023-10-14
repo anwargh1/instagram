@@ -1,10 +1,10 @@
 import React from 'react'
 import Menu from '../Menu/Menu'
 import './leftSide.css'
-const LeftSide = () => {
+const LeftSide = ({setPostsData}) => {
   return (
     <div className='left-side'>
-        <Menu/>
+        <Menu setPostsData={setPostsData}/>
     </div>
   )
 }
