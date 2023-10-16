@@ -9,8 +9,8 @@
 .image-profile img{
     border-radius: 100%;
     overflow: hidden;
-    height: 170px;
-    width: 170px;
+    width: 80%;
+    object-fit: contain;
 }
 
 .image-profile{
@@ -42,11 +42,9 @@
 }
 .one .profile-actions button{
     margin: 0;
-    padding: 8px 20px;
-    background-color: rgb(232, 232, 232);
+    padding: 4px 14px;
     border: none;
     border-radius: 8px;
-    font-weight: 500;
 }
 
 .bio{
@@ -57,7 +55,8 @@
 
 .two{
     display: flex;
-    gap: 32px;
+    justify-content: space-between;
+    gap: 4px;
     align-items: center;
 }
 
@@ -73,7 +72,7 @@
   .three p{
     font-size: 13px;
     font-weight: 600;
-  color: rgb(17, 17, 17);
+   color: rgb(17, 17, 17);
   }
 .account-type{
     color: rgb(155, 155, 155);
@@ -94,3 +93,36 @@
     font-size: 14px;
   color: rgb(17, 17, 17);
 }
+
+
+@media screen and (max-width: 650px) {
+    .two {
+        display: flex;
+        align-items: space-between;
+        gap: 15px;
+        align-items: center;
+        position: absolute;
+        top: 13%;
+        right: 0px;
+    }
+
+    .top-side-profile {
+        display: flex;
+        width: 90%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .user-profile-information {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .one {
+        justify-content: end;
+    }
+
+   
+  }

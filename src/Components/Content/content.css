@@ -1,3 +1,30 @@
 .content{
-    width: 60%;
+    width: 58%;
 }
+
+@media screen and (max-width: 1100px) {
+    .content{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .content{
+        width: 80%;
+    }
+
+  }
+
+  @media screen and (max-width: 750px) {
+    .content{
+        width: 90%;
+    }
+
+  }
+  @media screen and (max-width: 650px) {
+    .content{
+        width: 100%;
+    }
+
+  }

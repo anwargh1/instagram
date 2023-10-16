@@ -4,64 +4,51 @@ import './stories.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const storis = [
-  {
-    id: 1,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 2,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 3,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 4,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 5,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 6,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 7,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
-  {
-    id: 8,
-    userName: 'anwar.gh',
-    image: '../Images/profileImagePost.jpg',
-  },
- 
-];
 
-const settings = {
+const settings1 = {
+  dots: false,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 7,
+  slidesToScroll: 2,
+};
+
+const settings2 = {
   dots: false,
   infinite: false,
   speed: 500,
   slidesToShow: 6,
-  slidesToScroll: 6,
+  slidesToScroll: 2,
 };
 
-const Stories = () => {
+const settings3 = {
+  dots: false,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+};
+
+const Stories = ({users}) => {
+  const latestUsers =users.slice(-20)
+
   return (
     <div className='stories'>
-    <Slider {...settings} className='slider'>
-      {storis.map(s => (
-          <StoryItem props={s} />
+    <Slider {...settings1} className='slider1-story'>
+      {latestUsers.map(s => (
+          <StoryItem props={s} key={s.id}/>
+      ))}
+    </Slider>
+
+    <Slider {...settings2} className='slider2-story'>
+      {latestUsers.map(s => (
+          <StoryItem props={s} key={s.id}/>
+      ))}
+    </Slider>
+
+    <Slider {...settings3} className='slider3-story'>
+      {latestUsers.map(s => (
+          <StoryItem props={s} key={s.id}/>
       ))}
     </Slider>
   </div>

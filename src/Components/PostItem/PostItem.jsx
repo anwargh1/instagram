@@ -8,9 +8,10 @@ import {GoHeart} from 'react-icons/go'
 import {BsDot} from 'react-icons/bs'
 import './postItem.css'
 import DeleteAndEditPost from '../Models/DeleteAndEditPost/DeleteAndEditPost'
-const PostItem = ({ props ,onDelete ,onChange}) => {
+const PostItem = ({ props ,onDelete ,onChange , formatTimestamp}) => {
   const [open ,setOpen] =useState(false)
-
+  const postDate = formatTimestamp(props.createdAt)
+ 
   const handleOpen =()=>{
     setOpen(!open)
   }
@@ -21,7 +22,7 @@ const PostItem = ({ props ,onDelete ,onChange}) => {
           <img className ='profile-img' src={props.user.avatar} alt={props.userName + " Profile Image"} />
           <h4 className='name'>{props.user.userName}</h4>
           
-          <span className='time'><BsDot /> {props.createdAt}</span>
+          <span className='date'><BsDot /> {postDate}</span>
         </div>
         <BsThreeDots className='setting-icon' onClick={handleOpen}/>
         <DeleteAndEditPost close={setOpen}  isOpen={open} onDelete={onDelete} postId={props.id} onChange={onChange}/>

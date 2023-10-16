@@ -10,7 +10,7 @@ const User = () => {
     <img className='user-image' src={user.avatar} alt='User Image' />
     <div >
         <h4 className='user'>{user.userName}</h4>
-        <p className='user-name'>AnwarGhannam</p>
+        <p className='user-name'>{user.email}</p>
     </div>
     </div>
     <button className='switch'>Switch</button>

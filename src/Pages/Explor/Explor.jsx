@@ -7,8 +7,7 @@ const Explor = () => {
   return (
     <div className='explor'>
           <LeftSide/>
-
-        <ExplorSide/>
+          <ExplorSide/>
     </div>
   )
 }

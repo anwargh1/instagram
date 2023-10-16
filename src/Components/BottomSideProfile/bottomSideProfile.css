@@ -20,3 +20,28 @@
     width: 80%;
 
 }
+
+@media screen and (max-width: 750px) {
+    .bottom-side-profile {
+        width: 100%;
+    }
+   
+  }
+
+@media screen and (max-width: 650px) {
+    .bottom-side-profile {
+        width: 100%;
+    }
+
+    .interactions-user div {
+        font-size:25px;
+    
+    }
+
+    
+    .interactions-user div p {
+        display:none;
+    
+    }
+   
+  }

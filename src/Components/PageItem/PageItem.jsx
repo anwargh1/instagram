@@ -7,15 +7,14 @@ const PageItem = ({props}) => {
       <div className="page-item-details-rightSide">
         <img
           className="profile-image-rightSide"
-          src={props.profileImg}
-          alt={props.name}
+          src={props.avatar}
+          alt={props.userName}
         />
         <div className="pagesName-rightSide">
           <h5>
-            {props.name}{' '}
-            {props.verified && <MdVerified className="verified-icon" />}
+          {props.userName}
           </h5>
-          <p>{props.userName}</p>
+          <p>{props.email}</p>
         </div>
       </div>
       <button className="follow-button-rightSide">Follow</button>

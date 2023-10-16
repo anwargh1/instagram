@@ -1,9 +1,12 @@
-import React from 'react';
+import React , {useState}from 'react';
 import { FiInstagram } from 'react-icons/fi';
 import { IoMdMenu } from 'react-icons/io';
 import { RiThreadsFill } from 'react-icons/ri';
+import { BsInstagram } from 'react-icons/bs';
 import {Link} from 'react-router-dom';
 import MenuItem from '../MenuItem/MenuItem';
+import More from '../Models/More/More'
+
 import './menu.css';
 // const menuItem = [
 //   {
@@ -53,16 +56,20 @@ import './menu.css';
 //     <MenuItem props={item} key={item.id} />
 //   ))}
 // </div> */}
-const Menu = ({setPostsData}) => {
+const Menu = ({setPostsData , onSearch , value , users}) => {
+  const [openMoreModel, setOpenMoreModel] = useState(false);
+  const handleOpenMoreModel = () => setOpenMoreModel(!openMoreModel);
 
   return (
     <div className="menu ">
       <div className="top-side">
-      <Link to='/'> <div className="logo">
+      <Link to='/home'> <div className="logo">
 
             <img src='../Images/instagramLogo (2).png' alt='instagram logo'/>
+            <BsInstagram className='instagram-icon-logo'/>
         </div></Link>
-        <MenuItem setPostsData={setPostsData}/>
+        <MenuItem setPostsData={setPostsData}  onSearch={onSearch}  value={value}  users={users}/>
+
       </div>
 
       <div className="bottom-side">
@@ -72,13 +79,16 @@ const Menu = ({setPostsData}) => {
           </span>
           <p>Threads</p>
         </div>
-        <div className="more">
+        <div className="more" onClick={handleOpenMoreModel}>
           <span>
             <IoMdMenu />
           </span>
           <p>More</p>
+          <More isOpen={openMoreModel} close={setOpenMoreModel} />
+
         </div>
       </div>
+
     </div>
   );
 };

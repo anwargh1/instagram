@@ -12,7 +12,7 @@ const MessagesBoxItem = ({props}) => {
   return (
     <div className='message-box-item'>
       <div className='user-information'>
-    <img className='user-image' src='../Images/userImage.jpeg' alt='User Image' />
+    <img className='user-image' src={props.profile_img }alt='User Image' />
     <div >
         <p className='message-user'>{props.name}</p>
         <p className='last-message'>{props.last_message} <BsDot/> {number_day} </p>

@@ -5,7 +5,7 @@ const StoryItem = ({ props }) => {
   return (
     <div className="story-item">
       <div className="gradient">
-        <img src={props.image} alt={props.userName + 'Image'} />
+        <img src={props.avatar} alt={props.userName + 'Image'} />
       </div>
       <p>{props.userName}</p>
     </div>

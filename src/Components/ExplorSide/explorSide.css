@@ -1,7 +1,26 @@
 .explor-side{
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: space-between;
-
+    width: 100%;
+    justify-content: center;
 }
+
+
+.group-item-explor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+}
+
+
+@media screen and (max-width: 850px) {
+    .group-item-explor{
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .group-item-explor{
+        width: 100%;
+    }
+  }

@@ -4,6 +4,8 @@
     flex-direction: column;
     height: inherit;
     box-sizing: border-box;
+    align-items:center;
+    width:fit-content;
 }
 
 .top-side{
@@ -27,6 +29,7 @@
     align-items: center;
     padding:4px 20px 4px 8px;
     box-sizing: border-box;
+    position:relative;
 }
 
 .threads:hover ,
@@ -48,8 +51,64 @@
     top: 4px;
 }
 
+.instagram-icon-logo{
+    display:none
+}
+
+.bottom-side{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 4px;
+}
+@media screen and (max-width: 750px) {
+    .threads p,
+    .more p{
+        display:none
+    }
+    .logo img{
+        display:none
+    
+    }
+
+    .instagram-icon-logo{
+        display:block;
+        font-size: 25px;     
+        color:black;
+        
+    }
+    a {
+        color:black
+    }
+    .logo{
+        margin-top: 30px;
+        padding-left:0px;
+        align-self:flex-start
+    }
 
 
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        height: inherit;
+        width:100%
+    }
+    .logo{
+       display:none
+    }
+
+    .threads{
+        display:none
+    }
+    .top-side {
+        gap: 0px;
+    }
+   
+  }
 
 
 

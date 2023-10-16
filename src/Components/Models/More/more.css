@@ -1,0 +1,43 @@
+.more-container {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 8px;
+    text-align: right;
+  }
+  
+  .more-button {
+    background-color: #007BFF;
+    color: #fff; 
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .more-button:hover {
+    background-color: #0056b3; 
+  }
+  @media screen and (max-width: 750px and min-width: 650px) {
+    .more-container {
+        left:0px;
+        right:0px;
+        width:fit-content
+      }
+  
+   
+  }
+
+  @media screen and (max-width: 650px) {
+    .more-container {
+        
+        right: 0px;
+      }
+  
+   
+  }

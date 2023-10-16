@@ -1,5 +1,26 @@
 .left-side{
-    width: 17%;
+    width: 20%;
     border-right: 1px solid rgb(214, 214, 214);
     height: 640px;
 }
+
+@media screen and (max-width: 750px) {
+    .left-side{
+        width: fit-content;
+       
+    }
+
+  }
+  @media screen and (max-width: 650px) {
+    .left-side{
+        width: 100%;
+        border-right:none;
+        border-top: 1px solid rgb(214, 214, 214);
+        height: fit-content;
+        z-index:2;
+        position:fixed;
+        background-color:white;
+        bottom: 0;
+    }
+  }
+ 

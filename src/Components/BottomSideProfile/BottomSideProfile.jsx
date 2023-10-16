@@ -11,15 +11,14 @@ const BottomSideProfile = () => {
   const [userPosts, setUserPosts] = useState([]);
   const token = localStorage.getItem("token")
   const user = JSON.parse(localStorage.getItem("user"))
+ 
 
-  console.log(user);
   const handelGetPosts =()=>{
     axios.post(`http://16.170.173.197/posts/${user.id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     }).then((response) => {
-      console.log(response.data);
       setUserPosts(response.data.posts)
     }).catch((error) => {
       console.log("Error", error)

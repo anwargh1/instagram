@@ -55,9 +55,6 @@
 }
 
 
-
-
-
 .messages-box{
     padding: 20px ;
     height: 71%;
@@ -66,8 +63,6 @@
     gap: 12px;
     overflow-y: scroll;
 }
-
-
 
   .messages-box::-webkit-scrollbar {
     width: 1em;
@@ -80,4 +75,19 @@
   .messages-box::-webkit-scrollbar-thumb {
     background-color: rgb(208, 208, 208);
     outline: 1px solid slategrey;
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .direct-left-side{
+        width: 50%;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+    .direct-left-side{
+        width: 100%;
+    }
+
   }

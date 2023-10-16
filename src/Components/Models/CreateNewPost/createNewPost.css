@@ -51,14 +51,13 @@
   }
 
   .create-model{
-    width: 600px;
-    height:550px;
+    width: 400px;
+    height:fit-content;
     background-color: rgb(253, 253, 253);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-
   }
 
   .create-model h4{
@@ -74,9 +73,10 @@
     width: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap:32px;
     height: 90%;
     align-items: center;
+    
   }
 
   .input-flex{
@@ -91,18 +91,13 @@
     font-weight: 700;
     padding-left: 8px;
   }
-  .title-input{
-    height: 40px;
-    border: none;
-    background-color: rgb(215, 214, 214);
-    border-radius: 4px;
-  }
+
 
 .body-textarea{
-    height: 150px;
+    height: 60px;
     border: none;
     background-color: rgb(215, 214, 214);  
-      width: 100%;
+    width: 100%;
     border-radius: 4px;
 }
 .body-textarea:focus ,
@@ -129,4 +124,13 @@
   
   .post-action:hover {
     background-color: #5c5d5f; 
+  }
+
+
+  @media screen and (max-width: 550px) {
+    .create-model{
+      width: 300px;
+
+    }
+
   }

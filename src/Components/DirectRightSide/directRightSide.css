@@ -51,4 +51,23 @@
   .send-action:hover {
     background-color: #0082e6; 
   }
+  @media screen and (max-width: 750px) {
+    .direct-right-side {
+      width: 40%;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+    .direct-right-side {
+      display: none;
+    }
+
+  }
+
+
+ 
+
+
+
   

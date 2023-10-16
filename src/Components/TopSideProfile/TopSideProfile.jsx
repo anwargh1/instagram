@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './topSideProfile.css'
 import {IoIosSettings} from 'react-icons/io'
+import EditProfileForm  from '../EditProfileForm/EditProfileForm'
 
-const TopSideProfile = () => {
-    const [userData, setUserData] = useState([]);
-    const token = localStorage.getItem("token")
+const TopSideProfile = ({setUserData , onUpdate}) => {
     const user =JSON.parse(localStorage.getItem("user"))
+    const [openEditModel, setOpenEditModel] = useState(false);
+    const handleOpenEditModel = () => setOpenEditModel(true);
+    const handleCloseEditModel = () => setOpenEditModel(false);
 
   return (
-    <div className='top-side-profile'>
+    <div className='top-side-profile' >
         <div className='image-profile'>
             <img src={user.avatar} alt= {user.userName +" Image"}/>
         </div>
@@ -19,7 +21,7 @@ const TopSideProfile = () => {
                 <p className='user-name-profile'>{user.userName }</p>
 
                 <div className='profile-actions'>
-                <button>Edit profile</button>
+                <button onClick={handleOpenEditModel}>Edit profile</button>
                 <button>View Archive</button>
                 <button>Ad tools</button>
                 </div>
@@ -41,15 +43,16 @@ const TopSideProfile = () => {
                     <p>email : {user.email}</p>
                     <p>{user.bio}</p>
                     <p>AAUp || CS</p>
+                    <p>status:{user.status}</p>
+
             </div>
 
-            <div className='five'>
+            <div className='five' onClick={handleCloseEditModel}>
                 <p>1.4K accounts reached in the last 30 days.<span>View insights</span> </p>
             </div>
             </div>
-
-
         </div>
+        <EditProfileForm isOpen={openEditModel} user={user} setUserData={setUserData} onUpadte={onUpdate}/>
     </div>
   )
 }

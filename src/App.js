@@ -8,6 +8,7 @@ import Profile from "./Pages/Profile/Profile";
 import Direct from "./Pages/Direct/Direct";
 import Login from './Pages/Login/Login'
 import Signup from './Pages/Signup/Signup'
+import ErrorPage from './Pages/ErrorPage/ErrorPage'
 import ProtectedHome from "./Routes/ProtectedHome";
 import ProtectedAuth from "./Routes/ProtectedAuth";
 import Protected from "./Routes/Protected";
@@ -25,6 +26,8 @@ function App() {
                 <Route exact path='/direct' element={<Protected><Direct/></Protected>}></Route> 
                 <Route exact path='/signup' element={<ProtectedAuth><Signup /></ProtectedAuth>}></Route> 
                 <Route exact path='/' element={<ProtectedAuth><Login /></ProtectedAuth>}></Route> 
+                <Route path="*" element={<ErrorPage />} />
+
         </Routes> 
        
     </div> 

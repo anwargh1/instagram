@@ -3,11 +3,11 @@ import User from '../User/User'
 import Suggestion from '../Suggestion/Suggestion'
 import './rightSide.css'
 import Footer from '../Footer/Footer'
-const RightSide = () => {
+const RightSide = ({users}) => {
   return (
     <div className='rigth-side'>
         <User/>
-        <Suggestion/>
+        <Suggestion users={users}/>
         <Footer/>
     </div>
   )

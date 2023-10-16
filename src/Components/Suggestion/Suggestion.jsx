@@ -2,27 +2,28 @@ import React from 'react';
 import './suggestion.css';
 import PageItem from '../PageItem/PageItem';
 
-const pagesData = [
-  {
-    name: 'Tailwind CSS',
-    userName: 'tailwindCSS',
-    profileImg: '../Images/typeScript.png',
-    verified: true,
-  },
-  {
-    name: 'TypeScript',
-    userName: 'typeScript',
-    profileImg: '../Images/typeScript.png',
-    verified: false,
-  },
-  {
-    name: 'freeCodeCamp.org',
-    userName: 'freeCodeCamp',
-    profileImg: '../Images/typeScript.png',
-    verified: true,
-  },
-];
-const Suggestion = () => {
+// const pagesData = [
+//   {
+//     name: 'Tailwind CSS',
+//     userName: 'tailwindCSS',
+//     profileImg: '../Images/typeScript.png',
+//     verified: true,
+//   },
+//   {
+//     name: 'TypeScript',
+//     userName: 'typeScript',
+//     profileImg: '../Images/typeScript.png',
+//     verified: false,
+//   },
+//   {
+//     name: 'freeCodeCamp.org',
+//     userName: 'freeCodeCamp',
+//     profileImg: '../Images/typeScript.png',
+//     verified: true,
+//   },
+// ];
+const Suggestion = ({users}) => {
+  const latest =users.slice(-4)
   return (
 
       <div className="pages-you-might-like">
@@ -31,7 +32,7 @@ const Suggestion = () => {
           <p className='see-all'>See All</p>
         </div>
        <div className='pages'>
-       {pagesData.map(data => (
+       {latest.map(data => (
           <PageItem props={data} />
         ))}
        </div>

@@ -31,9 +31,6 @@ const CreateNewPost = ({isOpen , close ,setPostsData}) => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(formData);
-    console.log(description);
-    console.log(image);
     axios.post("http://16.170.173.197/posts", formData, {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -62,14 +59,15 @@ const CreateNewPost = ({isOpen , close ,setPostsData}) => {
                 setdescription(e.target.value)
               }} />
             </div>
-            <div>
             {imageCover && (
             <img
               src={imageCover}
               alt="Uploaded"
-              style={{ width: "30%", marginBottom: "1rem" }}
+              style={{ width: "40%" ,height: "80px" ,objectFit:'cover' }}
             />
           )}
+            <div>
+           
               <label for="avatar" class="custom-file-upload">
                 <span class="upload-icon">Select from computer</span>
               </label>

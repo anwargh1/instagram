@@ -8,57 +8,85 @@ const highlite = [
     {
       id: 1,
       title: 'Summer Vacation',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image4.jpg',
     },
     {
       id: 2,
       title: 'Family Reunion',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image1.jpg',
     },
     {
       id: 3,
       title: 'Hiking Adventure',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image7.jpg',
     },
     {
       id: 4,
       title: 'Beach Sunset',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image5.jpg',
     },
     {
       id: 5,
       title: 'City Explorations',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image10.jpg',
     },
     {
       id: 6,
       title: 'Mountain Retreat',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image9.jpg',
     },
     {
       id: 7,
       title: 'Foodie Delights',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image13.jpg',
     },
     {
       id: 8,
       title: 'Artistic Creations',
-      image: '../Images/profileImagePost.jpg',
+      image: '../Images/Image14.jpg',
     },
 ];
 
-const settings = {
+const settings1 = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 7,
-    slidesToScroll: 7,
+    slidesToShow: 8,
+    slidesToScroll:8,
+  };
+
+  const settings2 = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll:6,
+  };
+
+  const settings3 = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll:4,
   };
    
 const Highlight = () => {
   return (
     <div className='highlight'>
-    <Slider {...settings} className='slider'>
+    <Slider {...settings1} className='slider1'>
+      {highlite.map(h => (
+          <HighlightItem props={h} />
+      ))}
+    </Slider>
+
+    <Slider {...settings2} className='slider2'>
+      {highlite.map(h => (
+          <HighlightItem props={h} />
+      ))}
+    </Slider>
+
+    <Slider {...settings3} className='slider3'>
       {highlite.map(h => (
           <HighlightItem props={h} />
       ))}

@@ -288,6 +288,7 @@ import {PiCameraThin} from 'react-icons/pi'
   
 
 const UserPosts = ({userPosts}) => {
+  console.log(userPosts);
   if(userPosts.length !== 0) {
     return (
     <div className='user-posts'>
